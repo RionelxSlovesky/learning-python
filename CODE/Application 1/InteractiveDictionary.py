@@ -3,6 +3,7 @@ import json
 data = json.load(open("D:\\Python Tutorial\\learning-python\\CODE\\Application 1\\data.json"))
 
 def translate(word):
+    word = word.lower()
     if word in data:
         meaning = data[word]
         return meaning;
